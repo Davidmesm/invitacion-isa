@@ -6,6 +6,8 @@ import churchPhoto from '@/public/img/parroquia.jpg'
 import salonPhoto from '@/public/img/salon.jpg'
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import {doc, getDoc} from "@firebase/firestore"
+import db from '@/lib/firestore';
 
 const pacificoLatin = Pacifico({
   variable: "--font-pacifico-latin",
@@ -19,8 +21,12 @@ const alluraLatin = Allura({
   subsets: ["latin"],
 });
 
-export default function Home() {
+export default async function Home() {
 
+  const docRef = doc(db, "invitados", "jLc4B8B8XgkVU6BjUqHP");
+  const docSnap = await getDoc(docRef);
+  const invitado = docSnap.data();
+  
   return (
     <div className='block'>
       <section className='bg-black overflow-hidden relative box-border' style={{ clipPath: "polygon(0 0, 0 100%, 100% 100%, 100% 0)" }}>
@@ -39,8 +45,8 @@ export default function Home() {
         </div>
         <div className="pb-20">
           <p className="text-2xl md:text-3xl font-light tracking-wide text-center mb-4">INVITACIÓN <span className={cn("text-purple-800 font-extralight text-3xl md:text-4xl", pacificoLatin.className)}>válida</span> PARA:</p>
-          <p className="text-2xl md:text-3xl font-light tracking-wide text-center text-purple-900 mb-2">Nombre del Invitado</p>
-          <p className="text-xl md:text-2xl font-light tracking-wide text-center">( # <span className="text-purple-900">Adultos</span>  # <span className="text-purple-900">Niños</span> )</p>
+          <p className="text-2xl md:text-3xl font-light tracking-wide text-center text-purple-900 mb-2">{invitado.nombre}</p>
+          <p className="text-xl md:text-2xl font-light tracking-wide text-center">( {invitado.adultos} <span className="text-purple-900">Adultos</span> & {invitado.ninos} <span className="text-purple-900">Niños</span> )</p>
         </div>
         <div>
           <p className="text-lg/7 md:text-xl/7 font-light tracking-wide text-center">Me hará muy feliz que me acompañes en este día tan especial.</p>
