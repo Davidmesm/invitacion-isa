@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div>
-       <section className="h-screen bg-center bg-no-repeat md:bg-contain" style={{ backgroundImage: "url('/img/portada.png')", backgroundAttachment: "fixed", backgroundSize: "cover"}}>
+       <section className="h-screen bg-center bg-no-repeat" style={{ backgroundImage: "url('/img/portada.png')", backgroundAttachment: "fixed", backgroundSize: "cover"}}>
         <div className="flex items-center justify-center h-full bg-black bg-opacity-0 text-white">
         </div>
       </section>
@@ -40,7 +40,7 @@ export default function Home() {
           <p className="text-lg/7 md:text-xl/7 font-light tracking-wide text-center">Me hará muy feliz que me acompañes en este día tan especial.</p>
         </div>
       </section>
-      <div>Test 3</div>
+      <div>Test 4</div>
     </div>
   );
 }
