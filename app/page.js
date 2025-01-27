@@ -80,10 +80,102 @@ export default function Home() {
       <section className='' style={{ clipPath: "polygon(0 0, 0 100%, 100% 100%, 100% 0)" }}>
         <div className='bg-center bg-no-repeat bg-cover fixed h-full w-full top-0 left-0' style={{ backgroundImage: "url('/img/padrinos2.png')" }}></div>
         <div className='relative min-h-screen flex flex-wrap'>
-          <div className='w-full flex'>
-            <div className='align-content-end align-items-end w-full'>
-
+        </div>
+      </section>
+      <section className="h-screen bg-white text-black flex flex-col justify-center px-4 md:px-8">
+        <div className='flex flex-col h-full w-full justify-center gap-y-1'>
+          <div>
+            <h2 className={cn("text-center text-4xl text-purple-500", alluraLatin.className)}>Ceremonia</h2>
+          </div>
+          <div className='flex flex-col px-4 gap-y-4 w-full'>
+            <div className='flex flex-col gap-y-4'>
+              <div className='text-center'><p>CAPILLA DE MARIA MADRE NUESTRA</p></div>
+              <div>
+                <div className='text-center'>
+                  <LocationOn className="w-8 h-8 text-purple-600" />
+                </div>
+                <div className='text-center'><p>Paseo San Arturo Sur No. 3255, Col. Fraccionamiento Valle Real</p></div>
+              </div>
+              <div>
+                <div className='text-center'>
+                  <Schedule className="w-8 h-8 text-purple-600" />
+                </div>
+                <div className='text-center'><p>1:00 p.m.</p></div>
+              </div>
             </div>
+            <div className='px-4 justify-items-center'><Image src={churchPhoto} alt="Church" className='w-full rounded-md md:w-[300px]'></Image></div>
+            <div className='px-6 w-full md:justify-items-center'>
+              <div className='w-full md:w-[300px]'>
+                <Button className="w-full" asChild>
+                  <Link href="https://maps.app.goo.gl/wS2gchLrryYvVz16A">
+                    <ChevronRight /> ABRIR MAPA
+                  </Link>
+                </Button></div></div>
+          </div>
+        </div>
+      </section>
+      <section className="h-screen bg-purple-200 text-black flex flex-col justify-center px-4 md:px-8">
+        <div className='flex flex-col h-full w-full justify-center gap-y-10'>
+          <div>
+            <h2 className={cn("text-center text-4xl text-purple-500", alluraLatin.className)}>Recepción</h2>
+          </div>
+          <div className='flex flex-col px-4 gap-y-4 w-full'>
+            <div className='flex flex-col gap-y-4'>
+              <div className='text-center'><p>EVENTIUS TERRAZA JARDIN</p></div>
+              <div>
+                <div className='text-center'>
+                  <LocationOn className="w-8 h-8 text-purple-600" />
+                </div>
+                <div className='text-center'><p>Periferico No. 6280, Col. Miramar</p></div>
+              </div>
+              <div>
+                <div className='text-center'>
+                  <Schedule className="w-8 h-8 text-purple-600" />
+                </div>
+                <div className='text-center'><p>3:00 p.m.</p></div>
+              </div>
+            </div>
+            <div className='px-4 justify-items-center'><Image src={salonPhoto} alt="Eventius" className='w-full md:w-[300px] rounded-md'></Image></div>
+            <div className='px-6 w-full justify-items-center'>
+              <div className='w-full md:w-[300px]'>
+                <Button className="w-full" asChild>
+                  <Link href="https://maps.app.goo.gl/hQoHdeZe6qvqYkdY9">
+                    <ChevronRight /> ABRIR MAPA
+                  </Link>
+                </Button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='' style={{ clipPath: "polygon(0 0, 0 100%, 100% 100%, 100% 0)" }}>
+        <div className='bg-center bg-no-repeat bg-cover fixed h-full w-full top-0 left-0' style={{ backgroundImage: "url('/img/isa.jpg')" }}></div>
+        <div className='relative min-h-screen flex flex-wrap'>
+        </div>
+      </section>
+      <section className="z-10 relative h-screen bg-gradient-to-b from-purple-300 to-pink-300
+              bg-gradient-move animate-gradient text-black py-4">
+        <div className="bg-purple-50 rounded-md mx-4 h-full flex flex-col justify-center px-2 md:px-4 gap-y-10 md:gap-y-15">
+          <div className='pb-10'>
+            <p className="text-lg/7 md:text-xl/7 font-light tracking-wide text-center">
+              MIS RECUERDOS
+            </p>
+          </div>
+          <div className="pb-5">
+            <h2 className={cn("text-center text-5xl text-purple-500", alluraLatin.className)}>Hashtag</h2>
+          </div>
+          <div>
+            <p className="text-lg/7 md:text-xl/7 font-light tracking-wide text-center">
+              No olvides etiquetarme en todas tus publicaciones de Instagram y Facebook utilizando mi Hashtag…
+            </p>
+          </div>
+          <div>
+            <p className="text-2xl md:text-3xl font-light tracking-wide text-center text-purple-500">
+              #IsaPrimeraComunion
+            </p>
+          </div>
+          <div className='flex flex-column gap-x-10 w-full justify-center'>
+            <div><Instagram className="w-16 h-16 text-purple-600" /></div>
+            <div><Facebook className="w-16 h-16 text-purple-600" /></div>
           </div>
         </div>
       </section>
