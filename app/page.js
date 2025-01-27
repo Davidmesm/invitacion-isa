@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div className='block'>
       <section className='bg-black overflow-hidden relative box-border' style={{ clipPath: "polygon(0 0, 0 100%, 100% 100%, 100% 0)" }}>
-        <div className='bg-center bg-[url(/img/portada.png)] bg-no-repeat bg-cover fixed h-full w-full box-border' style={{ backgroundImage: "url('/img/portada2.jpg')" }}></div>
+        <div className='bg-center bg-no-repeat bg-cover fixed h-full w-full box-border' style={{ backgroundImage: "url('/img/portada.png')" }}></div>
         <div className='relative min-h-screen flex flex-wrap'>
           <div className='w-full flex'>
             <div className='align-content-end align-items-end w-full'>
