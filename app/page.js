@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="h-screen bg-fixed bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/img/portada.png')" }}>
+      <section className="h-screen sm:bg-fixed bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/img/portada.png')" }}>
         <div className="flex items-center justify-center h-full bg-black bg-opacity-0 text-white">
         </div>
       </section>
