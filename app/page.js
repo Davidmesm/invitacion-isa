@@ -23,12 +23,12 @@ export default function Home() {
 
   return (
     <div>
-      <section className="h-screen sm:bg-fixed bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/img/portada.png')" }}>
+      <section className="h-screen top-0 bg-cover bg-center bg-no-repeat sticky z-0" style={{ backgroundImage: "url('/img/portada.png')" }}>
         <div className="flex items-center justify-center h-full bg-black bg-opacity-0 text-white">
         </div>
       </section>
 
-      <section className="h-screen bg-purple-200 text-black flex flex-col justify-center px-4 md:px-8">
+      <section className="relative h-screen bg-purple-200 text-black flex flex-col justify-center px-4 md:px-8 z-10">
         <div className="pb-32">
           <p className="text-lg/7 md:text-xl/7 font-light tracking-wide text-center">Mi primera comunión es una ocasión especial para rodearme de la gente que quiero y que ha estado presente en mi vida.</p>
         </div>
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen bg-purple-400 py-6">
+      <section className="relative h-screen bg-purple-400 py-6 z-10">
         <div className="bg-white rounded-md mx-4 h-full flex flex-col justify-center px-2 gap-y-20 md:gap-y-40">
           <div>
             <p className="text-lg/7 md:text-xl/7 font-light tracking-wide text-center">
@@ -74,12 +74,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-[80vh] bg-fixed bg-cover bg-no-repeat md:bg-[center_top_-50rem]" style={{ backgroundImage: "url('/img/padrinos2.png')" }}>
+      <section className="h-[80vh] sticky bg-fixed bg-cover bg-no-repeat md:bg-[center_top_-50rem] z-0" style={{ backgroundImage: "url('/img/padrinos2.png')" }}>
         <div className="flex items-center justify-center h-full bg-black bg-opacity-0 text-white">
         </div>
       </section>
 
-      <section className="h-screen bg-white text-black flex flex-col justify-center px-4 md:px-8">
+      <section className="relative z-10 h-screen bg-white text-black flex flex-col justify-center px-4 md:px-8">
         <div className='flex flex-col h-full w-full justify-center gap-y-1'>
           <div>
             <h2 className={cn("text-center text-4xl text-purple-500", alluraLatin.className)}>Ceremonia</h2>
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen bg-purple-200 text-black flex flex-col justify-center px-4 md:px-8">
+      <section className="relative z-10 h-screen bg-purple-200 text-black flex flex-col justify-center px-4 md:px-8">
         <div className='flex flex-col h-full w-full justify-center gap-y-10'>
           <div>
             <h2 className={cn("text-center text-4xl text-purple-500", alluraLatin.className)}>Recepción</h2>
@@ -146,12 +146,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen bg-fixed bg-cover bg-center bg-no-repeat md:bg-[center_top_-10rem]" style={{ backgroundImage: "url('/img/isa.jpg')" }}>
+      <section className="sticky z-0 h-screen bg-cover bg-center bg-no-repeat md:bg-[center_top_-10rem]" style={{ backgroundImage: "url('/img/isa.jpg')" }}>
         <div className="flex items-center justify-center h-full bg-black bg-opacity-0 text-white">
         </div>
       </section>
 
-      <section className="h-screen bg-gradient-to-b from-purple-300 to-pink-300
+      <section className="z-10 relative h-screen bg-gradient-to-b from-purple-300 to-pink-300
               bg-gradient-move animate-gradient text-black py-4">
         <div className="bg-purple-50 rounded-md mx-4 h-full flex flex-col justify-center px-2 md:px-4 gap-y-10 md:gap-y-15">
           <div className='pb-10'>
