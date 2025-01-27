@@ -46,6 +46,47 @@ export default function Home() {
           <p className="text-lg/7 md:text-xl/7 font-light tracking-wide text-center">Me hará muy feliz que me acompañes en este día tan especial.</p>
         </div>
       </section>
+      <section className="h-screen bg-purple-400 py-6 z-10">
+        <div className="bg-white rounded-md mx-4 h-full flex flex-col justify-center px-2 gap-y-20 md:gap-y-40">
+          <div>
+            <p className="text-lg/7 md:text-xl/7 font-light tracking-wide text-center">
+              Con el corazón lleno de alegría, te invito a ser testigo y partícipe de una dia tan especial, a lado de mis personas favoritas.
+            </p>
+          </div>
+          <div className="flex flex-row flex-wrap gap-y-10">
+            <div className='w-full md:w-1/2'>
+              <div className="pb-4">
+                <h2 className={cn("text-center text-4xl text-purple-500", alluraLatin.className)}>Mis Papas</h2>
+              </div>
+              <div className="text-lg/7 md:text-xl/7 font-light tracking-wide">
+                <p className="text-center">David Moreno Espinosa de los Monteros</p>
+                <p className="text-center">&</p>
+                <p className="text-center">Maria de los Angeles Muñiz Ramos</p>
+              </div>
+            </div>
+            <div className='w-full md:w-1/2'>
+              <div className="pb-4">
+                <h2 className={cn("text-center text-4xl text-purple-500", alluraLatin.className)}>Mis Padrinos</h2>
+              </div>
+              <div className="text-lg/7 md:text-xl/7 font-light tracking-wide">
+                <p className="text-center">Felipe Espinosa de los Monteros Rico</p>
+                <p className="text-center">&</p>
+                <p className="text-center">Ivette Lavoignet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='' style={{ clipPath: "polygon(0 0, 0 100%, 100% 100%, 100% 0)" }}>
+        <div className='bg-center bg-no-repeat bg-cover fixed h-full w-full top-0 left-0' style={{ backgroundImage: "url('/img/padrinos2.png')" }}></div>
+        <div className='relative min-h-screen flex flex-wrap'>
+          <div className='w-full flex'>
+            <div className='align-content-end align-items-end w-full'>
+
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
