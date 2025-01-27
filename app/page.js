@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="h-screen bg-fixed bg-center bg-no-repeat md:bg-contain" style={{ backgroundImage: "url('/img/portada.png')" }}>
+      <section className="h-screen bg-fixed bg-cover bg-center bg-no-repeat md:bg-contain" style={{ backgroundImage: "url('/img/portada.png')" }}>
         <div className="flex items-center justify-center h-full bg-black bg-opacity-0 text-white">
         </div>
       </section>
@@ -80,7 +80,7 @@ export default function Home() {
       </section>
 
       <section className="h-screen bg-white text-black flex flex-col justify-center px-4 md:px-8">
-        <div className='flex flex-col h-full w-full justify-center gap-y-10'>
+        <div className='flex flex-col h-full w-full justify-center gap-y-1'>
           <div>
             <h2 className={cn("text-center text-4xl text-purple-500", alluraLatin.className)}>Ceremonia</h2>
           </div>
