@@ -23,8 +23,8 @@ export default function Home() {
 
   return (
     <div>
-      <div className="h-screen top-0 bg-cover bg-center" style={{ backgroundImage: "url('/img/portada.png')", backgroundAttachment: "fixed" }}></div>
-      <div className='relative bg-slate-950 h-screen'></div>
+      <div className="h-screen bg-cover bg-center bg-[url(/img/portada.png)] bg-fixed"></div>
+      <div className='bg-slate-950 h-screen'></div>
     </div>
   );
 }
