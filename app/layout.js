@@ -10,6 +10,7 @@ const robotoLatin = Roboto({
 export const metadata = {
   title: "Primera Comunión Isabella",
   description: "Invitación - Mi primera Comunión",
+  image: 
 };
 
 export default function RootLayout({ children }) {
