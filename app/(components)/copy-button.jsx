@@ -19,7 +19,7 @@ const CopyButton = ({ link }) => {
 Es un momento muy especial, y nos encantaría que formes parte de esta celebración.
 
 Haz clic en el siguiente enlace para ver todos los detalles:
-👉  ${domain}${link}`;
+👉  https://${domain}${link}`;
 
         navigator.clipboard
           .writeText(text)
