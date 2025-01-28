@@ -16,7 +16,7 @@ const CopyButton = ({ link }) => {
 
         const text = `
 ¡Se llegó el momento! La Primera Comunión de Isabella Moreno.
-Es un momento muy especial, y nos encantaría que formes parte de esta celebración.
+Es un momento muy especial, y nos encantara que formes parte de esta celebración.
 
 Haz clic en el siguiente enlace para ver todos los detalles:
 👉  https://${domain}${link}`;

@@ -42,6 +42,9 @@ export default async function Home({params}) {
         </div>
       </section>
       <section className="h-screen bg-purple-200 text-black flex flex-col justify-center px-4 md:px-8 z-10">
+      <div className="pb-32">
+      <h2 className={cn("text-center text-5xl text-purple-500", alluraLatin.className)}>22/febrero/2025</h2>
+        </div>
         <div className="pb-32">
           <p className="text-lg/7 md:text-xl/7 font-light tracking-wide text-center">Mi primera comunión es una ocasión especial para rodearme de la gente que quiero y que ha estado presente en mi vida.</p>
         </div>
