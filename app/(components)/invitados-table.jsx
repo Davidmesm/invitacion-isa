@@ -8,6 +8,8 @@ import CopyButton from './copy-button';
 
 const InvitadosTable = ({ invitados }) => {
 
+    console.log(invitados);
+
     return (
         <Table>
             <TableHeader>
